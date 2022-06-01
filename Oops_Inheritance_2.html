@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance 2</title>
+</head>
+<body>
+    <script>
+        class first
+        {
+            constructor()
+            {
+            var a,b;
+        }
+        input()
+        {
+            this.a=Number(prompt("Enter a"));
+            this.b=Number(prompt("Enter b"));
+        }
+        show()
+        {
+            document.write("A="+this.a+"B="+this.b+"<br>");
+        }
+        }
+        
+        class drv extends first
+        {
+            constructor()
+            { super();
+              var c,d;
+            }
+        
+        inputdata()
+        {
+            this.c=Number(prompt("Enter c"));
+            this.d=Number(prompt("Enter d"));
+        }
+        showdata()
+        {
+            document.write("C="+this.c+"D="+this.d+"<br>");   
+        }
+        sum()
+        {
+            document.write("SUM="+(this.a+this.b+this.c+this.d));
+        }
+    }
+        var m=new drv();
+        m.input();
+        m.show();
+        m.inputdata();
+        m.showdata();
+        m.sum();
+    </script>
+</body>
+</html>
